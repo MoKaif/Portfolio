@@ -1,0 +1,287 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300);
+
+body, html {
+  width: 100%;
+  height: 100%; 
+}
+
+header{
+  display:none;
+}
+
+h1 { 
+ font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 75px;
+  letter-spacing: 19px;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	padding-top: 200px;
+  position:relative
+}
+
+h2 {
+   font-family:'Oswald';
+  font-size: 14.5px;
+  letter-spacing: 7px;
+    font-style: Light;
+  font-weight: 300;
+   text-align: center;
+   color: #fff;
+   margin: 5px 0;
+	padding-top: 20px;
+	z-index: 1;
+	position: relative;
+
+}
+
+h3 { 
+ font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 55px;
+  letter-spacing: 10px;
+	text-align: left;
+	color: black;
+	margin: 0;
+  margin-top: 30px;
+	padding: 0;
+}
+
+h5 { 
+ font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 55px;
+  letter-spacing: 10px;
+  text-align: left;
+	color: white;
+	padding: 0;
+}
+
+
+
+
+ .text_container { 
+   width: 100%; 
+   word-wrap: break-word;
+   align-content:center;
+   text-align:center;
+  /* margin: 50px 0px 0px 120px;*/ 
+      font-family: 'Ubuntu';
+  font-style: Light;
+  color: #333333;
+  font-weight: 300;
+   font-size: 15px;
+
+}
+
+.center { margin: 0 auto; }
+.content{ margin: 0 auto; width: 960px; }
+
+/*= HEADER & NAVIGATION
+--------------------------------------------------------*/
+
+
+#header { 
+	width: 130%; 
+	height: 80px; 	
+	position: fixed;
+	margin-top: 30px;
+}
+
+#nav { 
+  width: 310px; 
+  /* float: right;  */
+  margin-top: 20px; 
+  display: inline-block;
+  z-index:1;
+}
+
+#nav ul{
+	list-style: none;
+	display: block;
+	margin: 0;
+  padding: 0;
+	list-style: none;	
+}
+
+#nav li{
+	margin-top: 9px;	
+	float: left;
+	padding-left: 21px;
+}
+
+#nav li a { 
+  color: #fff; 
+  opacity:0.6; 
+  font-size: 16px; 
+  text-decoration: none; 
+  font-family: 'Lato'; 
+}
+
+#nav li a.active { 
+  color: #fff; 
+  opacity:1; 
+}
+
+#nav li a:hover 
+{ 
+  color: #fff; opacity:1;  
+}
+
+
+
+/*= SOME ELEMENTS*/
+
+.arrow {
+  margin:auto; /* Required */
+ position:absolute; /* Required */
+ bottom:60px; /* Aligns at the bottom */
+ left:0;right:0; /* Aligns horizontal center */
+  width: 42px;
+  height: 20px; /* will be shrinked to size */ 
+}
+
+.jump {
+    /*animation*/
+    -webkit-animation: arrow-jump 1s infinite; /* Safari 4+ */
+  -moz-animation:    arrow-jump 1s infinite; /* Fx 5+ */
+  -o-animation:      arrow-jump 1s infinite; /* Opera 12+ */
+  animation:         arrow-jump 1s infinite; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes arrow-jump {
+  0%   { opacity: 0;}
+  100% { opacity: 1; 
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -0-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+  
+}
+/*= SLIDES STYLING
+--------------------------------------------------------*/
+
+
+#entry{
+	background:#1e2133;
+	margin: 0;
+	width:100%;
+  height:100%;
+	background-size: cover;
+}
+.text_container{
+    font-size: large;
+}
+ #about{
+    text-align: center;
+  line-height: 180%;
+  font-size: 18px;
+}
+/*
+.flex {
+    display: block;
+	  margin: 0;
+	  width:100%;
+    height:100%;
+    overflow: hidden;
+    display: flex;
+
+}
+
+.left-half {
+  background-color: #f2f2f2;
+  	background-size: cover;
+ width:50%;
+  /* flex: 1;
+  padding: 1rem;
+  */
+} */
+
+.right-half {
+background: url('https://s4.postimg.org/sgejweykd/grey_2.jpg') no-repeat;
+  background-size: cover;
+width:50%;
+  /*  flex: 1;
+  padding: 1rem;*/
+
+
+}
+
+#portfolio{
+    display: flex;
+	background: black;
+  width:100%;
+  height:100%;
+   padding: 30px 0 0 0;	
+}
+
+.row{
+  display: flex;
+  align-items: center;
+}
+
+
+.img-portfolio{
+  padding: 10px 0 0 0;
+}
+
+#info{
+  background: #d9d9d9;
+  width:100%;
+  height:70%;
+  margin: 0 auto;
+  background-size: cover;
+}
+
+.bottom-half { 
+  background:  #1e2133;
+  height: 70px;
+}
+
+h7 { 
+ font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  letter-spacing: 10px;
+	text-align: left;
+	color: black;
+}
+
+.content-left {  align-content: center; width: 960px;  margin-left: 5cm;}
+/*= FOOTER 
+--------------------------------------------------------*/
+
+h6 {
+   font-family: 'Ubuntu';
+  font-style: Light;
+  color: white;
+  font-weight: 300;
+   font-size: 12px;
+  letter-spacing: 2px;
+	position: relative;
+  text-align: left;
+  padding: 20px 0 0 0;
+}
+
+footer  { 
+  height:70px;  
+  background-color: #1e2133; 
+}
+
+p{
+  font-family:"Ubuntu";  
+  font-size: 12px; 
+  letter-spacing: 2px;
+  text-align: center; 
+  color: white;   
+  font-style: Light;
+  padding-top:25px;
+}
