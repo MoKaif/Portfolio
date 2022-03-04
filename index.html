@@ -1,107 +1,632 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="style.css">
-  <title>Portfolio - Kaif</title>
-</head>
-    <body>
-        <header id="header">
-        <div class="content">
-            <nav id="nav">
-            <ul>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaif Siddique</title>
+    <meta name="description" content="Welcome to my portfolio" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+
+  <body>
+    <!-- Mobile menu button -->
+    <div id="home" class="visuallyHidden"></div>
+    <div class="menuButton" id="menuButton" tabindex="0">
+      <div class="linesContainer">
+        <span></span>
+      </div>
+    </div>
+    <!-- Side menu -->
+    <aside class="sideMenu sideMenuShow" id="sideMenu">
+      <p class="logo">K</p>
+
+      <nav>
+        <ul class="navBar">
+          <li class="homeNav">
+            <a href="#home" class="navItem">
+              <i class="lni lni-home"></i>
+              <span class="navItemName">HOME</span>
+            </a>
+          </li>
+          <li class="aboutNav">
+            <a href="#about" class="navItem">
+              <i class="lni lni-user"></i>
+              <span class="navItemName">ABOUT</span>
+            </a>
+          </li>
+          <li class="skillsNav">
+            <a href="#skills" class="navItem">
+              <i class="lni lni-code-alt"></i>
+              <span class="navItemName">SKILLS</span>
+            </a>
+          </li>
+          <li class="worksNav">
+            <a href="#works" class="navItem">
+              <i class="lni lni-briefcase"></i>
+              <span class="navItemName">WORKS</span>
+            </a>
+          </li>
+          <li class="contactNav">
+            <a href="#contact" class="navItem">
+              <i class="lni lni-phone"></i>
+              <span class="navItemName">CONTACT</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="scrollDown" id="scrollDown">
+        <i class="lni lni-arrow-down"></i>
+        <span class="navItemName scrollDownText">Scroll Down</span>
+      </div>
+    </aside>
+
+    <!--Beginning of the wrapper -->
+    <div class="outerWrapper">
+      <div class="innerWrapper">
+        <!-- Header -->
+        <header>
+          <div class="heroImageContainer">
+            <img src="assets/K.jpg" />
+          </div>
+          <div class="heroDescription">
+            <p class="greeting">HI THERE! I'M</p>
+            <h1><span>Kaif</span>Siddique</h1>
+            <p class="smallBio">
+              A <span>Computer Engineering Undergraduate </span> passionate
+              about creating interactive applications and experiences on the
+              web.
+            </p>
+            <div class="socialsResume">
+              <a
+                class="resumeLink"
+                href="assets/Alex-Calia-Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Resumé</a
+              >
+              <ul class="socialsList">
                 <li>
-                <a href="#about" class="active" title="Next Section">About</a>
+                  <a
+                    href="https://www.linkedin.com/in/mokaif"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="lni lni-linkedin-original"></i
+                  ></a>
                 </li>
                 <li>
-                <a href="#portfolio" title="Next Section">Portfolio</a>
+                  <a
+                    href="https://github.com/mokaif"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="lni lni-github-original"></i
+                  ></a>
                 </li>
                 <li>
-                <a href="#info" title="Next Section">Contacts</a>
+                  <a
+                    href="https://twitter.com/_kaifsiddique"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i class="lni lni-twitter-original"></i
+                  ></a>
                 </li>
-            </ul>
-            </nav>
-        </div>
+              </ul>
+            </div>
+          </div>
         </header>
-        <div id="entry">
-        <div class="content">
-            <h1>Mohammad Kaif Siddique</h1>
-    
-            <h2>Web Developer</h3>
-    
-            <a href="#about"><img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSI5NiAxNjAgMzIwIDE5MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMzk2LjYgMTYwbDE5LjQgMjAuN0wyNTYgMzUyIDk2IDE4MC43bDE5LjMtMjAuN0wyNTYgMzEwLjV6Ii8+PC9zdmc+" class="arrow jump">
-                </img></a>
-        </div>
-    
-        </div>
-    
-        <div id="about">
-    
-        <div class="flex">
-            <div class="left-half">
-            <div class="content-left">
-                <h3>About</h3><br></br><br></br>
+        <!-- Beginning of Main -->
+        <main>
+          <!-- About Section -->
+          <section class="aboutSection" id="about">
+            <div class="sectionHead">
+              <span>SOME INFO</span>
+              <h2>ABOUT ME</h2>
             </div>
-            <div class="text_container">
-                Hi, i'm Kaif.<br></br>
-                I'm a 2nd Year Undergraduate Computer Engineer and I have worked on<br> 
-                several projects where I have used
-                technologies like React, Node, Express, MongoDB, MySQL.
-                &nbsp;<br></br><br></br>
-                Oh...and if you're not convinced, check my portfolio below!
-    
+
+            <article class="aboutContainer sectionContainer">
+              <p>
+                I am a Machine Learning and Web Development enthusiast. I am
+                also a competitive programmer and have contributed to the
+                open-source as well. Currently, I am studying at 
+                <span>Shree LR Tiwari College of Engineering</span>. I
+                am passionate about coding and solving problems through code,
+                and I am excited to work alongside other amazing programmers and
+                learn so much more!
+              </p>
+            </article>
+          </section>
+
+          <!-- Skills Section -->
+          <section class="skillsSection" id="skills">
+            <div class="sectionHead">
+              <span>CHECK OUT MY</span>
+              <h2>SKILLS</h2>
             </div>
+
+            <div class="skillsContainer sectionContainer">
+              <ul class="skillsGrid">
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/icons8-html-5.svg" />
+                    <p>HTML</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/icons8-css3.svg" />
+                    <p>CSS</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/icons8-bootstrap-48.png" />
+                    <p>Bootstrap</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/icons8-javascript.svg" />
+                    <p>Javascript</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/icons8-nodejs.svg" />
+                    <p>NodeJS</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/icons8-react-native.svg" />
+                    <p>React</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/icons8-java.svg" />
+                    <p>Java</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/icons8-git.svg" />
+                    <p>Git</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/icons8-firebase.svg" />
+                    <p>Firebase</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/icons8-c++.svg" />
+                    <p>C++</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/icons8-python.svg" />
+                    <p>Python</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/icons8-mongodb.svg"/>
+                    <p>MongoDB</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/icons8-postgresql.svg" />
+                    <p>PostgreSQL</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/icons8-linux-48.png" />
+                    <p>Linux</p>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="right-half">
+          </section>
+
+          <!-- Works Section -->
+          <section class="worksSection" id="works">
+            <div class="sectionHead">
+              <span>TAKE A LOOK AT MY</span>
+              <h2>PROJECTS</h2>
             </div>
-        </div>
-        </div>
-    
-        <div id="portfolio">
-        <div class="content-left">
-            <h5>Portfolio</h5>
-    
-            <div class="row">
-            <div class="col1">
-                <h2> Wiki Search </h2>
-                <a href="https://mokaif.github.io/wiki-search/">
-                <img class="img-responsive img-portfolio" src="./src/wikiSearch.png"></a>
+
+            <div class="worksContainer sectionContainer">
+              <article class="workBox">
+                <div class="workImageContainer">
+                  <img src="assets/spms.png" alt="Stonk." />
+                </div>
+                <div class="workDescribeContainer">
+                  <h3>Stonk Market</h3>
+                  <h4>
+                    Technologies Used: <span class="techStack">React</span>,
+                    <span class="techStack">REST API</span>,
+                    <span class="techStack">ChartJS</span>
+                  </h4>
+                  <ul>
+                    <li>
+                      Completely built with hooks and functional components
+                    </li>
+                    <li>
+                      Emulates time passage, and stock prices update randomly as
+                      each "day" passes
+                    </li>
+                    <li>
+                      Real-time updates on stock and portfolio performance,
+                      visualized with interactive charts
+                    </li>
+                  </ul>
+                  <div class="workLinks">
+                    <a
+                      href="https://alexcalia.com/stonks"
+                      class="liveLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/alexcalia/stonks"
+                      class="repoLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Repo</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="workBox">
+                <div class="workImageContainer">
+                  <img
+                    src="assets/mrs.png"
+                    alt="Podcast Prioritizer landing page."
+                  />
+                </div>
+                <div class="workDescribeContainer">
+                  <h3>Podcast Prioritizer</h3>
+                  <h4>
+                    Technologies Used: <span class="techStack">React</span>,
+                    <span class="techStack">REST API</span>,
+                    <span class="techStack">Firebase</span>,
+                    <span class="techStack">Google Authentication</span>
+                  </h4>
+                  <ul>
+                    <li>
+                      Uses the MapQuest and ListenNotes API to get route times
+                      and filter podcast search results based on travel time
+                    </li>
+                    <li>
+                      Google Authenitcation service allows users to sign in and
+                      save podcasts to a list, stored in Firebase
+                    </li>
+                  </ul>
+                  <div class="workLinks">
+                    <a
+                      href="https://alexcalia.com/podcastprioritizer"
+                      class="liveLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/alexcalia/podcastprioritizer"
+                      class="repoLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Repo</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="workBox">
+                <div class="workImageContainer">
+                  <img
+                    src="assets/images/cohort.PNG"
+                    alt="COHORT app's Collaborate page."
+                  />
+                </div>
+                <div class="workDescribeContainer">
+                  <h3>COHORT</h3>
+                  <h4>
+                    Technologies Used: <span class="techStack">React</span>,
+                    <span class="techStack">React Router</span>,
+                    <span class="techStack">Firebase</span>,
+                    <span class="techStack">REST API</span>
+                  </h4>
+                  <ul>
+                    <li>
+                      React Router was used to create multiple views for the
+                      chat and quotes systems
+                    </li>
+                    <li>
+                      Real-time chat where users can change their username, with
+                      all messages stored in Firebase
+                    </li>
+                    <li>
+                      Pulls a random quote from an API where users can write an
+                      anonymous reflection for others to see, all stored in
+                      Firebase
+                    </li>
+                  </ul>
+                  <div class="workLinks">
+                    <a
+                      href="https://alexcalia.com/cohort"
+                      class="liveLink"
+                      target="_blank"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/alexcalia/cohortApp"
+                      class="repoLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Repo</a
+                    >
+                    <a
+                      href="https://www.loom.com/share/f615f75be23b40639d3cf74b163c71bc"
+                      class="demoLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Demo</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="workBox">
+                <div class="workImageContainer">
+                  <img
+                    src="assets/images/gamescope.PNG"
+                    alt="Game Scope landing page."
+                  />
+                </div>
+                <div class="workDescribeContainer">
+                  <h3>Game Scope</h3>
+                  <h4>
+                    Technologies Used: <span class="techStack">JQuery</span>,
+                    <span class="techStack">REST API</span>,
+                    <span class="techStack">SASS</span>
+                  </h4>
+                  <ul>
+                    <li>Information on games pulled from a video game API</li>
+                    <li>
+                      Games can be filtered by genre using a drop down menu,
+                      where the endpoint is updated dynamically
+                    </li>
+                    <li>
+                      Using pagination, more games from the genres can be pulled
+                      as users request them
+                    </li>
+                  </ul>
+                  <div class="workLinks">
+                    <a
+                      href="https://alexcalia.com/gamescope"
+                      class="liveLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/alexcalia/gamescope"
+                      class="repoLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Repo</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="workBox">
+                <div class="workImageContainer">
+                  <img
+                    src="assets/images/slangapp.PNG"
+                    alt="Twitter Slang Generator page with results diplsayed."
+                  />
+                </div>
+                <div class="workDescribeContainer">
+                  <h3>Twitter Slang Generator</h3>
+                  <h4>
+                    Technologies Used: <span class="techStack">JQuery</span>,
+                    <span class="techStack">SASS</span>
+                  </h4>
+                  <ul>
+                    <li>
+                      Users click an abbreviation and are given a randomly
+                      generated definition
+                    </li>
+                    <li>
+                      Words are randomly chosen from a large object containing
+                      arrays of words for each letter
+                    </li>
+                    <li>Toggle between light and dark themes</li>
+                    <li>
+                      Secret mode can be unlocked where users can enter their
+                      own abbreviations
+                    </li>
+                  </ul>
+                  <div class="workLinks">
+                    <a
+                      href="https://alexcalia.com/slangapp"
+                      class="liveLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/alexcalia/slangapp"
+                      class="repoLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Repo</a
+                    >
+                  </div>
+                </div>
+              </article>
+
+              <article class="workBox">
+                <div class="workImageContainer">
+                  <img
+                    src="assets/images/psdconversion.PNG"
+                    alt="Sanctuary Helpers home page."
+                  />
+                </div>
+                <div class="workDescribeContainer">
+                  <h3>Sanctuary Helpers</h3>
+                  <h4>
+                    Technologies Used: <span class="techStack">HTML</span>,
+                    <span class="techStack">CSS</span>
+                  </h4>
+                  <ul>
+                    <li>
+                      Large display mockup and sizings were given and translated
+                      into a fully responsive website
+                    </li>
+                    <li>
+                      Orientation for smaller displays were determined by me
+                    </li>
+                  </ul>
+                  <div class="workLinks">
+                    <a
+                      href="https://alexcalia.com/psdconversion"
+                      class="liveLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/alexcalia/psdconversion"
+                      class="repoLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Repo</a
+                    >
+                  </div>
+                </div>
+              </article>
             </div>
-            <div class="col2">
-                <h2> Weather App </h2>
-                <a href="https://mokaif.github.io/weather-app/">
-                <img class="img-responsive img-portfolio" src="./src/weatherApp.png"></a>
+          </section>
+
+          <!-- Contact Section -->
+          <section class="contactSection" id="contact">
+            <div class="sectionHead">
+              <span>SAY HELLO</span>
+              <h2>CONTACT</h2>
             </div>
-            <!-- <div class="col3">
-                <h2> Title </h2>
-                <a href="" target="_blank">
-                <img class="img-responsive img-portfolio" src="https://s-media-cache-ak0.pinimg.com/736x/69/09/80/69098077e9f3d9fcf45ace0b88ca5494.jpg"></a>
-            </div> -->
+
+            <div class="contactContainer sectionContainer">
+              <h3>Get in Touch</h3>
+              <div class="contactTypes">
+                <div class="flexContainer">
+                  <div class="typeBox">
+                    <i class="lni lni-envelope"></i>
+                    <a href="mailto:alex.m.calia@outlook.com"
+                      >alex.m.calia@outlook.com</a
+                    >
+                    <p>Email Me</p>
+                  </div>
+                </div>
+                <div class="flexContainer">
+                  <div class="typeBox">
+                    <i class="lni lni-calendar"></i>
+                    <a
+                      href="https://calendly.com/alexcalia/30min"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Calendly</a
+                    >
+                    <p>Schedule a Meeting</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contactFormContainer">
+                <h3>Contact Form</h3>
+
+                <form
+                  id="contactForm"
+                  action="https://formspree.io/mbjzeqpq"
+                  method="POST"
+                >
+                  <label for="nameInput" class="srOnly"></label>
+                  <input
+                    type="text"
+                    id="nameInput"
+                    name="nameInput"
+                    class="nameInput"
+                    required
+                    placeholder="Your Name*"
+                  />
+                  <label for="emailInput" class="srOnly"></label>
+                  <input
+                    type="email"
+                    id="emailInput"
+                    name="emailInput"
+                    class="emailInput"
+                    required
+                    placeholder="Your Email*"
+                  />
+                  <label for="subjectInput" class="srOnly"></label>
+                  <input
+                    type="text"
+                    id="subjectInput"
+                    name="subjectInput"
+                    class="subjectInput"
+                    required
+                    placeholder="Subject*"
+                  />
+                  <label for="messageInput" class="srOnly"></label>
+                  <textarea
+                    class="messageInput"
+                    name="messageInput"
+                    id="messageInput"
+                    required
+                    placeholder="Your Message*"
+                  ></textarea>
+                </form>
+
+                <button
+                  type="submit"
+                  class="formSend"
+                  target="_blank"
+                  form="contactForm"
+                  rel="noopener noreferrer"
+                >
+                  SEND
+                </button>
+              </div>
             </div>
-    
-        </div>
-        </div>
-    
-        <div id="info">
-        <br></br> <br></br>
-        <div class="content-left">
-    
-            <h7>Connect through <a href="http://kaif44jr@gmail.com">kaif44jr@gmail.com</a></h7>
-            <br></br>
-            <h7>Or find me here</h7>
-            <br></br>
-            <a href="https://twitter.com/_kaifsiddique">
-            <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter1.png" width="35" height="35" />
-            </a>
-            <a href="https://www.linkedin.com/in/mokaif/">
-            <img title="LinkedIn" alt="LinkedIn" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin1.png" width="35" height="35" />
-            </a>
-    
-        </div>
-        </div>
-    
-        <footer>
-        <p>Copyrigth © Mohammad Kaif Siddique 2015. All Rights Reserved</p>
-        </footer>
-    
-    </body>
+          </section>
+        </main>
+        <!-- End of Main -->
+      </div>
+      <!-- Footer -->
+      <footer>
+        <p>&copy; Kaif Siddique 2020</p>
+      </footer>
+      <!-- Icons provided by https://lineicons.com/ -->
+    </div>
+    <!-- End of the wrapper -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+  </body>
 </html>
+>>>>>>> c044701 (redesigned the website)
