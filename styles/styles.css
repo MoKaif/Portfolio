@@ -742,6 +742,7 @@ header .heroDescription .socialsResume .resumeLink:focus {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+  justify-content: center;
 }
 
 .contactTypes .flexContainer {

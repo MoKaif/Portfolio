@@ -78,7 +78,7 @@
             <p class="greeting">HI THERE! I'M</p>
             <h1><span>Kaif</span>Siddique</h1>
             <p class="smallBio">
-              A <span>Computer Engineering Undergraduate </span> passionate
+              An <span>Undergraduate Computer Engineer </span> passionate
               about creating interactive applications and experiences on the
               web.
             </p>
@@ -132,11 +132,11 @@
               <p>
                 I am a Machine Learning and Web Development enthusiast. I am
                 also a competitive programmer and have contributed to the
-                open-source as well. Currently, I am studying at 
-                <span>Shree LR Tiwari College of Engineering</span>. I
-                am passionate about coding and solving problems through code,
-                and I am excited to work alongside other amazing programmers and
-                learn so much more!
+                open-source as well. Currently, I am studying at
+                <span>Shree LR Tiwari College of Engineering</span>. I am
+                passionate about coding and solving problems through code, and I
+                am excited to work alongside other amazing programmers and learn
+                so much more!
               </p>
             </article>
           </section>
@@ -218,7 +218,7 @@
                 </li>
                 <li>
                   <div class="itemContainer">
-                    <img src="assets/icons8-mongodb.svg"/>
+                    <img src="assets/icons8-mongodb.svg" />
                     <p>MongoDB</p>
                   </div>
                 </li>
@@ -248,38 +248,37 @@
             <div class="worksContainer sectionContainer">
               <article class="workBox">
                 <div class="workImageContainer">
-                  <img src="assets/spms.png" alt="Stonk." />
+                  <img src="assets/spms.png" alt="Smart-Plant-Monitoring-System" />
                 </div>
                 <div class="workDescribeContainer">
-                  <h3>Stonk Market</h3>
+                  <h3>Smart Plant Monitoring System</h3>
                   <h4>
-                    Technologies Used: <span class="techStack">React</span>,
-                    <span class="techStack">REST API</span>,
-                    <span class="techStack">ChartJS</span>
+                    Technologies Used:
+                    <span class="techStack">Javascript</span>,
+                    <span class="techStack">Firebase</span>,
+                    <span class="techStack">Arduino</span>
                   </h4>
                   <ul>
+                    <li>IoT sensors: DHT11 & Soil Moisture sensors used.</li>
                     <li>
-                      Completely built with hooks and functional components
+                      Sensor data is pushed to a firebase real-time
+                      database(RTDB)
                     </li>
                     <li>
-                      Emulates time passage, and stock prices update randomly as
-                      each "day" passes
-                    </li>
-                    <li>
-                      Real-time updates on stock and portfolio performance,
-                      visualized with interactive charts
+                      Real-time updates on web dashboard. Hosting and
+                      authentication provided by firebase
                     </li>
                   </ul>
                   <div class="workLinks">
                     <a
-                      href="https://alexcalia.com/stonks"
+                      href="https://smart-plant-monitoring-s-94e5c.web.app/"
                       class="liveLink"
                       target="_blank"
                       rel="noopener noreferrer"
                       >Live</a
                     >
                     <a
-                      href="https://github.com/alexcalia/stonks"
+                      href="https://github.com/MoKaif/Smart-Plant-Monitoring-System"
                       class="repoLink"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -293,37 +292,40 @@
                 <div class="workImageContainer">
                   <img
                     src="assets/mrs.png"
-                    alt="Podcast Prioritizer landing page."
+                    alt="movie-recommender-system."
                   />
                 </div>
                 <div class="workDescribeContainer">
-                  <h3>Podcast Prioritizer</h3>
+                  <h3>Movie Recommender System</h3>
                   <h4>
-                    Technologies Used: <span class="techStack">React</span>,
-                    <span class="techStack">REST API</span>,
-                    <span class="techStack">Firebase</span>,
-                    <span class="techStack">Google Authentication</span>
+                    Technologies Used: <span class="techStack">Python</span>,
+                    <span class="techStack">NLTK</span>,
+                    <span class="techStack">Streamlit</span>,
                   </h4>
                   <ul>
                     <li>
-                      Uses the MapQuest and ListenNotes API to get route times
-                      and filter podcast search results based on travel time
+                      Uses Content filtering to recommend movies from
+                      <a
+                        href="https://www.kaggle.com/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv"
+                        style="color: blueviolet"
+                        >TMDB 5000 dataset</a
+                      >
                     </li>
                     <li>
-                      Google Authenitcation service allows users to sign in and
-                      save podcasts to a list, stored in Firebase
+                      The model is a cosine-similarity which is designed using
+                      the Streamlit library and the hosting is done on Heroku
                     </li>
                   </ul>
                   <div class="workLinks">
                     <a
-                      href="https://alexcalia.com/podcastprioritizer"
+                      href="https://movie-recommender-mokaif.herokuapp.com/"
                       class="liveLink"
                       target="_blank"
                       rel="noopener noreferrer"
                       >Live</a
                     >
                     <a
-                      href="https://github.com/alexcalia/podcastprioritizer"
+                      href="https://github.com/MoKaif/movie-recommender-system"
                       class="repoLink"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -336,53 +338,40 @@
               <article class="workBox">
                 <div class="workImageContainer">
                   <img
-                    src="assets/images/cohort.PNG"
-                    alt="COHORT app's Collaborate page."
+                    src="assets/w.png"
+                    alt="Weather App"
                   />
                 </div>
                 <div class="workDescribeContainer">
-                  <h3>COHORT</h3>
+                  <h3>Weather App</h3>
                   <h4>
-                    Technologies Used: <span class="techStack">React</span>,
-                    <span class="techStack">React Router</span>,
-                    <span class="techStack">Firebase</span>,
-                    <span class="techStack">REST API</span>
+                    Technologies Used: <span class="techStack">React</span>
+                    
                   </h4>
                   <ul>
                     <li>
-                      React Router was used to create multiple views for the
-                      chat and quotes systems
+                      React was used to create the design of the app
                     </li>
                     <li>
-                      Real-time chat where users can change their username, with
-                      all messages stored in Firebase
+                      OpenWeatherMap API was used to fetch the weather of the input city.
                     </li>
                     <li>
-                      Pulls a random quote from an API where users can write an
-                      anonymous reflection for others to see, all stored in
-                      Firebase
+                      Temperature and weather of the city is displayed. The page is hosted on Github Pages.
                     </li>
                   </ul>
                   <div class="workLinks">
                     <a
-                      href="https://alexcalia.com/cohort"
+                      href="https://mokaif.github.io/weather-app/"
                       class="liveLink"
                       target="_blank"
                       >Live</a
                     >
                     <a
-                      href="https://github.com/alexcalia/cohortApp"
+                      href="https://github.com/MoKaif/weather-app"
                       class="repoLink"
                       target="_blank"
                       rel="noopener noreferrer"
                       >Repo</a
-                    >
-                    <a
-                      href="https://www.loom.com/share/f615f75be23b40639d3cf74b163c71bc"
-                      class="demoLink"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Demo</a
                     >
                   </div>
                 </div>
@@ -390,39 +379,29 @@
 
               <article class="workBox">
                 <div class="workImageContainer">
-                  <img
-                    src="assets/images/gamescope.PNG"
-                    alt="Game Scope landing page."
-                  />
+                  <img src="assets/ws.png" alt="Wiki Search" />
                 </div>
                 <div class="workDescribeContainer">
-                  <h3>Game Scope</h3>
+                  <h3>Wiki Search</h3>
                   <h4>
-                    Technologies Used: <span class="techStack">JQuery</span>,
-                    <span class="techStack">REST API</span>,
-                    <span class="techStack">SASS</span>
+                    Technologies Used: <span class="techStack">React</span>
                   </h4>
                   <ul>
-                    <li>Information on games pulled from a video game API</li>
+                    <li>Wikipedia API is used to get the data on the input</li>
                     <li>
-                      Games can be filtered by genre using a drop down menu,
-                      where the endpoint is updated dynamically
-                    </li>
-                    <li>
-                      Using pagination, more games from the genres can be pulled
-                      as users request them
+                      The top 20 searches and the total results generated are displayed.
                     </li>
                   </ul>
                   <div class="workLinks">
                     <a
-                      href="https://alexcalia.com/gamescope"
+                      href="https://mokaif.github.io/wiki-search/"
                       class="liveLink"
                       target="_blank"
                       rel="noopener noreferrer"
                       >Live</a
                     >
                     <a
-                      href="https://github.com/alexcalia/gamescope"
+                      href="https://github.com/MoKaif/wiki-search"
                       class="repoLink"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -435,13 +414,13 @@
               <article class="workBox">
                 <div class="workImageContainer">
                   <img
-                    src="assets/images/slangapp.PNG"
-                    alt="Twitter Slang Generator page with results diplsayed."
+                    src="assets/d.png"
+                    alt="Discord Page"
                   />
                 </div>
                 <div class="workDescribeContainer">
-                  <h3>Twitter Slang Generator</h3>
-                  <h4>
+                  <h3>Discord Server Landing Page</h3>
+                  <!-- <h4>
                     Technologies Used: <span class="techStack">JQuery</span>,
                     <span class="techStack">SASS</span>
                   </h4>
@@ -459,17 +438,17 @@
                       Secret mode can be unlocked where users can enter their
                       own abbreviations
                     </li>
-                  </ul>
+                  </ul> -->
                   <div class="workLinks">
                     <a
-                      href="https://alexcalia.com/slangapp"
+                      href="https://mokaif.github.io/discord-server-landing-page/index.html"
                       class="liveLink"
                       target="_blank"
                       rel="noopener noreferrer"
                       >Live</a
                     >
                     <a
-                      href="https://github.com/alexcalia/slangapp"
+                      href="https://github.com/MoKaif/discord-server-landing-page"
                       class="repoLink"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -479,7 +458,7 @@
                 </div>
               </article>
 
-              <article class="workBox">
+              <!-- <article class="workBox">
                 <div class="workImageContainer">
                   <img
                     src="assets/images/psdconversion.PNG"
@@ -518,7 +497,7 @@
                     >
                   </div>
                 </div>
-              </article>
+              </article> -->
             </div>
           </section>
 
@@ -535,31 +514,20 @@
                 <div class="flexContainer">
                   <div class="typeBox">
                     <i class="lni lni-envelope"></i>
-                    <a href="mailto:alex.m.calia@outlook.com"
-                      >alex.m.calia@outlook.com</a
+                    <a href="mailto:kaif44jr@gmail.com"
+                      >kaif44jr@gmail.com</a
                     >
                     <p>Email Me</p>
                   </div>
                 </div>
-                <div class="flexContainer">
-                  <div class="typeBox">
-                    <i class="lni lni-calendar"></i>
-                    <a
-                      href="https://calendly.com/alexcalia/30min"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Calendly</a
-                    >
-                    <p>Schedule a Meeting</p>
-                  </div>
-                </div>
+                
               </div>
               <div class="contactFormContainer">
                 <h3>Contact Form</h3>
 
                 <form
                   id="contactForm"
-                  action="https://formspree.io/mbjzeqpq"
+                  action="https://formspree.io/f/mayvjdze"
                   method="POST"
                 >
                   <label for="nameInput" class="srOnly"></label>
@@ -629,4 +597,3 @@
     <script type="text/javascript" src="scripts/index.js"></script>
   </body>
 </html>
-
